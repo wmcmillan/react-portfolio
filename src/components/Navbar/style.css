@@ -1,0 +1,22 @@
+body {
+    background-color: #768a95;
+}
+
+.card {
+    background-color:silver;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icon {
+    height:15px;
+    width:15px;
+    }
+
+.cardtext {
+    text-align: center;
+}
+
+#project-header {
+    text-decoration: underline;
+}
