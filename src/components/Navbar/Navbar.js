@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './style.css'
 
 export default function Navbar() {
@@ -6,7 +7,7 @@ export default function Navbar() {
         <div>
             <nav>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Wesley McMillan</a>
+        <Link class="navbar-brand" to="/">Wesley McMillan</Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,17 +25,13 @@ export default function Navbar() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >About Me <span class="sr-only">(current)</span></a
-              >
+              <Link class="nav-link" to="/"
+                >About Me</Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <Link class="nav-link" to="/portfolio">Portfolio</Link>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
           </ul>
         </div>
       </nav>

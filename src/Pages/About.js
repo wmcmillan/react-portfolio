@@ -1,5 +1,6 @@
 import React from "react";
-import './style.css'
+import './style.css';
+import {Link} from 'react-router-dom';
 
 export default function About() {
   return (
@@ -24,20 +25,20 @@ export default function About() {
          </p>
          <section>
             <p className="lead">
-               <a
+               <Link
                   className="btn btn-dark btn-lg"
-                  href="portfolio.html"
+                  to="/portfolio"
                   role="button"
                   >
                My Projects
-               </a>
-               <a
+               </Link>
+               <Link
                   className="btn btn-dark btn-lg"
-                  href="Wesley McMillan- Resume 9_2020.pdf"
+                  to="Wesley McMillan- Resume 9_2020.pdf"
                   role="button"
                   >
                Resume
-               </a>
+               </Link>
             </p>
          </section>
          <a href="https://www.linkedin.com/in/wesley-m-46157088/">
@@ -48,10 +49,10 @@ export default function About() {
          </a>
       </div>
    </main>
-      <div className="card" style={{width: 20}}>
+      <div className="card">
          <h5 className="card-title">Contact Me</h5>
          <div className="row">
-            <div className="col-md-9 mb-md-0 mb-5">
+            <div className="col-md-12 mb-md-0 mb-5">
                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                   <section className="row">
                      <section className="col-md-12">
